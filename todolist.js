@@ -7,7 +7,7 @@ $("ul").on("click","span",function(event){
 	});
 	event.stopPropagation();
 });
-$("input[type ='text']").on("keypress",function(event){
+$("input[type ='text']").on("keydown",function(event){
 	if(event.which === 13){
 		var newTodo = $(this).val();
 		$(this).val("");
